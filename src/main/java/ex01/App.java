@@ -17,17 +17,26 @@ Keep the input, string concatenation, and output separate.
  */
 
 public class App {
+    static Scanner in = new Scanner(System.in);
+
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
+        App myApp = new App();
 
-        // Input
+        String name = myApp.readName();
+        String outputString = myApp.generateOutputString(name);
+        myApp.printOutput(outputString);
+    }
+
+    public String readName() {
         System.out.print("What is your name? ");
-        String name = in.nextLine();
+        return in.nextLine();
+    }
 
-        // Concatenation
-        String outputString = "Hello, " + name + ", nice to meet you!";
+    public String generateOutputString(String name) {
+        return String.format("Hello, %s, nice to meet you!", name);
+    }
 
-        // Output
+    public void printOutput(String outputString) {
         System.out.println(outputString);
     }
 }
