@@ -3,17 +3,8 @@ package ex01;
 import java.util.Scanner;
 
 /*
-Exercise 1 - Saying Hello
-
-Create a program that prompts for your name and prints a greeting using your name.
-
-Example Output
-
-What is your name? Brian
-Hello, Brian, nice to meet you!
-
-Constraint
-Keep the input, string concatenation, and output separate.
+ *  UCF COP3330 Summer 2021 Assignment 1 Solution
+ *  Copyright 2021 Savannah Osburn
  */
 
 public class App {
